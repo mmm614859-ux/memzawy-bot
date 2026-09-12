@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 import google.generativeai as genai
 
 # --- 1. إعدادات البوت والـ API Keys ---
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "AAH-BJPixbLAG1zCI9kDOKcvTVC1WT1beVg")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8960745150:AAH-BJPixbLAG1zCI9kDOKcvTVC1WT1beVg")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AQ.Ab8RN6LPycXRcm2-qzydtzNHEMteQF-uoSHD_8z98H4UscPzDw")
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
