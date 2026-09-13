@@ -4,8 +4,8 @@ from PIL import Image, ImageDraw, ImageFont
 import google.generativeai as genai
 
 # --- 1. إعدادات البوت والـ API Keys ---
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8960745150:AAH-BJPixbLAG1zCI9kDOKcvTVC1WT1beVg")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AQ.Ab8RN6LPycXRcm2-qzydtzNHEMteQF-uoSHD_8z98H4UscPzDw")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY")
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
@@ -95,4 +95,3 @@ def handle_text(message):
 if __name__ == "__main__":
     print("MemzawyBot is running...")
     bot.infinity_polling()
-
